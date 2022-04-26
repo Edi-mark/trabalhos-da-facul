@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real numero, con=0.0
+		enquanto (con < 10){
+			con ++
+			escreva("\nDigite um numero positivo ou negativo: ")
+			leia(numero)
+			se (numero < 0){
+				escreva("este numero é negativo")
+			}
+			senao{
+				escreva("este numero é positivo")
+			}
+		}
+	}
+}
