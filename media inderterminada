@@ -1,0 +1,34 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real numero, npositivo= 0.0, nnegativo =0.0,media, numerototal, percentualn, percentualp
+		inteiro con=0, conpositivo=0, connegativo =0
+		cadeia fim = "não"
+		faca{
+			con ++
+			escreva ("\nDigite um numero aqui: ")
+			leia(numero)
+			escreva ("\nPrescione apenas enter para continuar ou Digite não para encerrar: ")
+			leia (fim)
+			se (numero < 0){
+				connegativo ++
+				nnegativo = nnegativo + numero
+				escreva("\n negativo " ,nnegativo)
+			}
+			senao{
+				conpositivo ++
+				npositivo = npositivo + numero
+			}
+		}enquanto (fim !="não")
+			numerototal = npositivo + nnegativo
+			media = numerototal / con
+			percentualn = connegativo * 100 / (connegativo + conpositivo)
+			percentualp = conpositivo * 100 / (connegativo + conpositivo)
+			escreva("\na media é ", media)
+			escreva("\nquantidade de numeros positivos: ", conpositivo,"\nquantidade de numeros negativos: ", connegativo)
+			escreva("\nO percentual de numeros positvo: ", percentualp, "%","\nO percentual de numeros negativos: ",percentualn ,"%")
+		}
+		
+	}
